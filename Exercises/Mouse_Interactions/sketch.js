@@ -10,7 +10,7 @@ function setup() {
   //View > Developer > Developer Tools > Console
   console.log("Initialization: OK")
   canvas = createCanvas(windowWidth, windowHeight);
-  squareSize = 12
+  squareSize = 4
   numINC = squareSize*1
   halfW = width/numINC;
   halfH = height/numINC;
@@ -37,7 +37,7 @@ function draw() {
         }
       rect(x*halfW, y*halfH, halfW, halfH);
     }
-
+noLoop();
 console.log(x1);
 console.log(x2);
 console.log(y1);
